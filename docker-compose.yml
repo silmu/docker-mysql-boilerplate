@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-8-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - '3310:3306' # Binds default MySQL port 3306 to port 3310. If you want to use default set it to '3306:3306'
+    volumes:
+      - mysql-data:/var/lib/mysql
+    restart: always
+
+volumes:
+  mysql-data:
