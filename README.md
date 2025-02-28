@@ -12,7 +12,7 @@ If you don't feel like setting up MySQL on your system, using MySQL in a system 
 
 If you encounter error logging in for the first time run:
 
-1. `docker exec -it mysql-8-container mysql -u root -p` to login into MySQL in the container
+1. `docker exec -it mysql-8.4-container mysql -u root -p` to login into MySQL in the container
 2. Set the authentication plugin to `caching_sha2_password`:
 
    ```sql
