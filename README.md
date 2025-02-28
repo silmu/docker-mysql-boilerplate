@@ -16,6 +16,6 @@ If you encounter error logging in for the first time run:
 2. Set the authentication plugin to `caching_sha2_password`:
 
    ```sql
-   ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+   ALTER USER 'root'@'localhost' IDENTIFIED WITH 'caching_sha2_password' BY 'root';
    FLUSH PRIVILEGES;
    ```
